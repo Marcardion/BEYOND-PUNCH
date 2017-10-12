@@ -179,7 +179,7 @@ Camera:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingPath: -1
-  m_TargetTexture: {fileID: 1289550785}
+  m_TargetTexture: {fileID: 1595472883}
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 0
@@ -313,7 +313,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &194151579
 Transform:
   m_ObjectHideFlags: 0
@@ -696,6 +696,7 @@ GameObject:
   - component: {fileID: 566405066}
   - component: {fileID: 566405069}
   - component: {fileID: 566405070}
+  - component: {fileID: 566405071}
   m_Layer: 8
   m_Name: FrontCard3
   m_TagString: Untagged
@@ -799,6 +800,18 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!65 &566405071
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 566405064}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 9.999999, y: 0.0000008940697, z: 9.999999}
+  m_Center: {x: 0, y: 0, z: 0.000002861023}
 --- !u!1 &582965764
 GameObject:
   m_ObjectHideFlags: 0
@@ -1564,33 +1577,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1258729636}
   m_Mesh: {fileID: 4300004, guid: 7b74a9430deb7c944b424a0daf0c6973, type: 3}
---- !u!84 &1289550785
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: 
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_Width: 1013
-  m_Height: 558
-  m_AntiAliasing: 2
-  m_DepthFormat: 2
-  m_ColorFormat: 0
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 0
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 1
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
 --- !u!1 &1298847296
 GameObject:
   m_ObjectHideFlags: 0
@@ -1604,6 +1590,7 @@ GameObject:
   - component: {fileID: 1298847298}
   - component: {fileID: 1298847301}
   - component: {fileID: 1298847302}
+  - component: {fileID: 1298847303}
   m_Layer: 8
   m_Name: FrontCard1
   m_TagString: Untagged
@@ -1707,6 +1694,18 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!65 &1298847303
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1298847296}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 9.999999, y: 0.0000008940697, z: 9.999999}
+  m_Center: {x: 0, y: 0.0000038146973, z: 0.0000009536743}
 --- !u!1 &1356174718
 GameObject:
   m_ObjectHideFlags: 0
@@ -1822,6 +1821,33 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1582006359}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!84 &1595472883
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_Width: 917
+  m_Height: 558
+  m_AntiAliasing: 2
+  m_DepthFormat: 2
+  m_ColorFormat: 0
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 0
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
 --- !u!1 &1614685108
 GameObject:
   m_ObjectHideFlags: 0
@@ -2075,6 +2101,7 @@ GameObject:
   - component: {fileID: 1660210338}
   - component: {fileID: 1660210341}
   - component: {fileID: 1660210342}
+  - component: {fileID: 1660210343}
   m_Layer: 8
   m_Name: FrontCard2
   m_TagString: Untagged
@@ -2178,6 +2205,18 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!65 &1660210343
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1660210336}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 9.999999, y: 0.0000008940697, z: 9.999999}
+  m_Center: {x: 0.00000011920929, y: 0, z: 0.000002861023}
 --- !u!1 &1691569273
 GameObject:
   m_ObjectHideFlags: 0
@@ -2371,6 +2410,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 2013991997}
+  - component: {fileID: 2013991998}
   m_Layer: 8
   m_Name: Play1
   m_TagString: Untagged
@@ -2394,6 +2434,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 32.256, y: 180.00002, z: 0}
+--- !u!114 &2013991998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2013991996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63724bea18180e942abe9e3a0bd951bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  card1: {fileID: 1298847296}
+  card2: {fileID: 1660210336}
+  card3: {fileID: 566405064}
+  camera: {fileID: 149422642}
 --- !u!1 &2042916014
 GameObject:
   m_ObjectHideFlags: 0
