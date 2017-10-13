@@ -179,7 +179,7 @@ Camera:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingPath: -1
-  m_TargetTexture: {fileID: 1145468244}
+  m_TargetTexture: {fileID: 419023981}
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 0
@@ -802,6 +802,33 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 409467128}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!84 &419023981
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_Width: 963
+  m_Height: 558
+  m_AntiAliasing: 2
+  m_DepthFormat: 2
+  m_ColorFormat: 0
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 0
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
 --- !u!1 &566405064
 GameObject:
   m_ObjectHideFlags: 0
@@ -4922,7 +4949,7 @@ ParticleSystem:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 951286204}
   serializedVersion: 5
-  lengthInSec: 5
+  lengthInSec: 0.41
   simulationSpeed: 1
   looping: 0
   prewarm: 0
@@ -4974,14 +5001,14 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: 890150779
+  randomSeed: -1075266649
   InitialModule:
     serializedVersion: 3
     enabled: 1
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.5
+      scalar: 0.26
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -5010,8 +5037,8 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 20
-      minScalar: 15
+      scalar: 12
+      minScalar: 7
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -5391,7 +5418,7 @@ ParticleSystem:
     sphericalDirectionAmount: 0
     randomPositionAmount: 0
     radius:
-      value: 4.2
+      value: 0.64206475
       mode: 0
       spread: 0
       speed:
@@ -8552,33 +8579,6 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!84 &1145468244
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: 
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_Width: 963
-  m_Height: 558
-  m_AntiAliasing: 2
-  m_DepthFormat: 2
-  m_ColorFormat: 0
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 0
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 1
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
 --- !u!1001 &1196779713
 Prefab:
   m_ObjectHideFlags: 0
@@ -13681,7 +13681,7 @@ ParticleSystem:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1739139423}
   serializedVersion: 5
-  lengthInSec: 5
+  lengthInSec: 0.62
   simulationSpeed: 1
   looping: 0
   prewarm: 0
@@ -13733,14 +13733,14 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: 1851499384
+  randomSeed: -864025983
   InitialModule:
     serializedVersion: 3
     enabled: 1
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.5
+      scalar: 0.26
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -13769,8 +13769,8 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 20
-      minScalar: 15
+      scalar: 12
+      minScalar: 7.15
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -14150,7 +14150,7 @@ ParticleSystem:
     sphericalDirectionAmount: 0
     randomPositionAmount: 0
     radius:
-      value: 4.2
+      value: 0.51654524
       mode: 0
       spread: 0
       speed:
@@ -20559,7 +20559,7 @@ ParticleSystem:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2145843316}
   serializedVersion: 5
-  lengthInSec: 5
+  lengthInSec: 0.68
   simulationSpeed: 1
   looping: 0
   prewarm: 0
@@ -20611,14 +20611,14 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: -525806451
+  randomSeed: -104809668
   InitialModule:
     serializedVersion: 3
     enabled: 1
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.5
+      scalar: 0.26
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -20647,8 +20647,8 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 20
-      minScalar: 15
+      scalar: 12
+      minScalar: 7
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -21028,7 +21028,7 @@ ParticleSystem:
     sphericalDirectionAmount: 0
     randomPositionAmount: 0
     radius:
-      value: 4.2
+      value: 0.70032024
       mode: 0
       spread: 0
       speed:
