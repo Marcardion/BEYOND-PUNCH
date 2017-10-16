@@ -1,27 +1,34 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Networking;
 
-public class CardsController : MonoBehaviour {
+public class CardsController : NetworkBehaviour {
+
 
 	public GameObject card1;
 	public GameObject card2;
 	public GameObject card3;
 	public Camera camera;
 
-	public string p1slot1Choose = "";
-	public string p1slot2Choose = "";
-	public string p1slot3Choose = "";
-
-	public string p2slot1Choose = "grab";
-	public string p2slot2Choose = "block";
-	public string p2slot3Choose = "punch";
-
-
-
 	private bool slot1 = false;
 	private bool slot2 = false;
 	private bool slot3 = false;
+
+	[SyncVar]
+	public string p1slot1Choose = "";
+	[SyncVar]
+	public string p1slot2Choose = "";
+	[SyncVar]
+	public string p1slot3Choose = "";
+	[SyncVar]
+	public string p2slot1Choose = "";
+	[SyncVar]
+	public string p2slot2Choose = "";
+	[SyncVar]
+	public string p2slot3Choose = "";
+
+
 
 
 
@@ -44,14 +51,27 @@ public class CardsController : MonoBehaviour {
 						slot1 = true;					
 						card1.GetComponent<Animator> ().SetBool ("p1C1Slot1", true);
 
-						p1slot1Choose = "block";
-					
+						if (isServer) {
+							Debug.Log ("tá no server");
+							p1slot1Choose = "block";
+
+						} else {
+							Debug.Log ("não tá no server");
+							p2slot1Choose = "block";
+						}
+
+
 					} else if (slot2 == false) {
 					
 						slot2 = true;
 						card1.GetComponent<Animator> ().SetBool ("p1C1Slot2", true);
 
-						p1slot2Choose = "block";
+						if (isServer) {
+						
+							p1slot2Choose = "block";
+						} else {
+							p2slot2Choose = "block";
+						}
 
 					
 					} else {
@@ -59,7 +79,11 @@ public class CardsController : MonoBehaviour {
 						slot3 = true;
 						card1.GetComponent<Animator> ().SetBool ("p1C1Slot3", true);
 
-						p1slot3Choose = "block";
+						if (isServer) {
+							p1slot3Choose = "block";
+						} else {
+							p2slot3Choose = "block";
+						}
 
 					}
 
@@ -73,7 +97,12 @@ public class CardsController : MonoBehaviour {
 						slot1 = true;
 						card2.GetComponent<Animator> ().SetBool ("p1C2Slot1", true);
 
-						p1slot1Choose = "grab";
+						if (isServer) {
+							p1slot1Choose = "grab";
+						
+						} else {
+							p2slot1Choose = "grab";
+						}
 
 
 					} else if (slot2 == false) {
@@ -81,7 +110,11 @@ public class CardsController : MonoBehaviour {
 						slot2 = true;
 						card2.GetComponent<Animator> ().SetBool ("p1C2Slot2", true);
 
-						p1slot2Choose = "grab";
+						if (isServer) {
+							p1slot2Choose = "grab";
+						} else {
+							p2slot2Choose = "grab";
+						}
 
 
 					} else {
@@ -89,7 +122,11 @@ public class CardsController : MonoBehaviour {
 						slot3 = true;
 						card2.GetComponent<Animator> ().SetBool ("p1C2Slot3", true);
 
-						p1slot3Choose = "grab";
+						if (isServer) {
+							p1slot3Choose = "grab";
+						} else {
+							p2slot3Choose = "grab";
+						}
 
 					}
 
@@ -102,21 +139,33 @@ public class CardsController : MonoBehaviour {
 						slot1 = true;
 						card3.GetComponent<Animator> ().SetBool ("p1C3Slot1", true);
 
-						p1slot1Choose = "punch";
+						if (isServer) {
+							p1slot1Choose = "punch";
+						} else {
+							p2slot1Choose = "punch";
+						}
 
 					} else if (slot2 == false) {
 
 						slot2 = true;
 						card3.GetComponent<Animator> ().SetBool ("p1C3Slot2", true);
 
-						p1slot2Choose = "punch";
+						if (isServer) {
+							p1slot2Choose = "punch";
+						} else {
+							p2slot2Choose = "punch";
+						}
 
 					} else {
 
 						slot3 = true;
 						card3.GetComponent<Animator> ().SetBool ("p1C3Slot3", true);
 
-						p1slot3Choose = "punch";
+						if (isServer) {
+							p1slot3Choose = "punch";
+						} else {
+							p2slot3Choose = "punch";
+						}
 
 					}
 

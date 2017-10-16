@@ -58,19 +58,34 @@ public class PlayersController : NetworkBehaviour {
 
 			if (!turn1) {
 				yield return new WaitForSeconds (1.0f);
-				cardComb (cardsController.p1slot1Choose, cardsController.p2slot1Choose);
+			
+				if (isServer) {
+					cardComb (cardsController.p1slot1Choose, cardsController.p2slot1Choose);
+				} else {
+					cardComb (cardsController.p2slot1Choose, cardsController.p1slot1Choose);
+				}
 				turn1 = true;
 			}
 
 			if (!turn2) {
 				yield return new WaitForSeconds (2.0f);
-				cardComb (cardsController.p1slot2Choose, cardsController.p2slot2Choose);
+
+				if (isServer) {
+					cardComb (cardsController.p1slot2Choose, cardsController.p2slot2Choose);
+				} else {
+					cardComb (cardsController.p2slot2Choose, cardsController.p1slot2Choose);
+				}
 				turn2 = true;
 			}
 
 			if (!turn3) {
 				yield return new WaitForSeconds (2.0f);
-				cardComb (cardsController.p1slot3Choose, cardsController.p2slot3Choose);
+
+				if (isServer) {
+					cardComb (cardsController.p1slot3Choose, cardsController.p2slot3Choose);
+				} else {
+					cardComb (cardsController.p2slot3Choose, cardsController.p1slot3Choose);
+				}
 				turn3 = true;
 			}
 

@@ -11,7 +11,6 @@ public class NetworkManagerUI : MonoBehaviour {
 
 	public void CreateServer (){
 
-		networkManager.networkPort = 456;
 		networkManager.StartHost ();
 		gameAnimator.SetTrigger ("start");
 		lightsAnimator.SetTrigger ("start");
